@@ -26,15 +26,15 @@ const amount3 = calculateSubtotal(goods1);
 expenses.set(groupName,amount3)
 
 //Bad Names                 //Good Names
-Maximum                     MAX_PURCHASE
-request_timeout             REQUEST_TIMEOUT
-ERCODE                      ERROR_CODES
-numbers                     prices
-arrayOfGoods                goods
-orderItemsInShopBasket      items
-amt                         amount
-grp_N                       groupName
-itogo2                      total
-tolalAndSubtotal            calculateSubtotal
-BuyerCalculatins            calculateTotal
-VE                          validateExpenses
+// Maximum                     MAX_PURCHASE
+// request_timeout             REQUEST_TIMEOUT
+// ERCODE                      ERROR_CODES
+// numbers                     prices
+// arrayOfGoods                goods
+// orderItemsInShopBasket      items
+// amt                         amount
+// grp_N                       groupName
+// itogo2                      total
+// tolalAndSubtotal            calculateSubtotal
+// BuyerCalculatins            calculateTotal
+// VE                          validateExpenses
