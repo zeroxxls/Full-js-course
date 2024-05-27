@@ -1,6 +1,6 @@
  const items = [
     {price: 40},
-    {price: 120},
+    {price: -120},
     {price: '505'},
     {price: 350},
 ];
@@ -11,15 +11,15 @@
 
 
 const calculateSum = (items) => {
-    let totalSum = 0
+    let total = 0
     for(const item of items){
-        const price = item.price
-        if(item !== typeof(number) && item < 0){
-            throw new Error('Parameter is not a number!');
+        if(typeof item.price === 'number'){
+            if(item.price >0){
+                total += item.price
+            }
         }
-        totalSum += price
     }
-    return totalSum
+    return total
 }
 
 
