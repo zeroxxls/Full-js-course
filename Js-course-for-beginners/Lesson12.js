@@ -54,3 +54,54 @@ const add1 = (x) => (y) =>{
 
 const result2 = add1(5)(6);
 console.log(result2)
+
+
+
+
+//Лексическое окружение 
+const x = 1 //глобальное окружение ссылка на null
+
+const y = function(){ //глобальное окружение  ссылка на null
+    const i = 'Hi' //локальное окружение  ссылка на глоб лекс окр
+    console.log(i)
+}
+
+
+//Определение Замыканий
+//Замыкания это способность функции в js запоминать лексическое окружение в котором она была создана
+// *тоесть хранить в себе ссылку на это окружение
+
+function makeCounter(count){
+    return function(){
+        return count++;
+    }
+}
+
+let counter = makeCounter(0);
+let counter2 = makeCounter(0);
+
+alert(counter()); //0
+alert(counter()); //1
+
+alert(counter2()); //0
+alert(counter2()); //1
+
+
+function createIncrement (){
+    let count = 0;
+    function increment (){
+        count ++;
+    }
+    function log(){
+        let message = `Count is ${count}`
+        console.log(message)
+    }
+
+    return [increment,log]
+}
+
+const [increment,log] = createIncrement();
+increment(); //0
+increment(); //1
+increment(); //2
+log(); //Count is 3
