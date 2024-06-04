@@ -11,16 +11,16 @@ const purchase = {
     ],
   };
 
-//   const find = (items,productName) =>{
-//    for (const group of Object.values(items)){
-//     for(const item of group){
-//         if(item.name === productName){
-//             return item
-//         }
-//     }
-//    }
-//    return null;
-//   }
+  const find2 = (items,productName) =>{
+   for (const group of Object.values(items)){
+    for(const item of group){
+        if(item.name === productName){
+            return item
+        }
+    }
+   }
+   return null;
+  }
 
 const find = (purchase, itemName) => {
     for (const category of Object.values(purchase)) {
