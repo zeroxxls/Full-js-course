@@ -45,3 +45,8 @@ setTimeout(() => {
     console.log('#callback3');},
 15);
 
+setTimeout(() => {
+    console.log('#callback3');},
+30);
+
+
