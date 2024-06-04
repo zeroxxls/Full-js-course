@@ -44,3 +44,11 @@ while( y < 10 ){
 }
 console.log("End")
 
+let hello = 0
+while(hello < 20){
+    hello++;
+    console.log("Hello",hello)
+    if(hello===5)continue;
+    console.log("World")
+}
+console.log("End")
