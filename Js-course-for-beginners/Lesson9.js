@@ -5,9 +5,9 @@
     {price: 350},
 ];
 
-// for(const item of items){
-//     console.log(`Price: ${item.price}`)
-// }
+for(const item of items){
+    console.log(`Price: ${item.price}`)
+}
 
 
 const calculateSum = (items) => {
