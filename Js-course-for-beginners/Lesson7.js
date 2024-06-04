@@ -57,6 +57,6 @@ const prices = [10,1500,100,50]
 const price = prices.find((item) => item > 100); //ищем первое значение которое больше 100 в массиве
 console.log({price});
 
-if(prices.includes(100))console.log('100 is there')//выводит '100 is there' если мы находим 100 в массиве
+if(prices.includes(100))console.log('100 is there')выводит '100 is there' если мы находим 100 в массиве
 // {price: 1500}
 // 100 is there
