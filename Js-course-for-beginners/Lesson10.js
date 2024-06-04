@@ -57,6 +57,14 @@ electronics1.set('Mouse',50);
 for(const[key,value] of electronics1){
     console.log(`Price of ${key} is ${value}`)
 }
+
+const electronics3 = new Map();
+electronics1.set('Laptop',1500);
+electronics1.set('Mouse',50);
+
+for(const[key,value] of electronics1){
+    console.log(`Price of ${key} is ${value}`)
+}
 //Проверка
 const electronics2 = new Map();
 electronics2.set('Laptop',1500);
