@@ -57,13 +57,19 @@ console.log(result2)
 
 
 
-
-//Лексическое окружение 
+//Лексическое окруженик
 const x = 1 //глобальное окружение ссылка на null
 
 const y = function(){ //глобальное окружение  ссылка на null
     const i = 'Hi' //локальное окружение  ссылка на глоб лекс окр
     console.log(i)
+}
+
+const ivent = 1
+
+const price = function(){
+    const z = '2'
+    console.log(z)
 }
 
 
