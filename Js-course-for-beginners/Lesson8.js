@@ -63,3 +63,13 @@ const addTotal = (obj) =>{
 
 const order1 = addTotal(basket);
 console.log(order1)
+
+
+const basket = { Laptop:1500, Mouse:20,};
+
+const addTotal1 = (obj) =>{
+    return{...obj,total:calculateTotal(obj)};
+}
+
+const order2 = addTotal(basket);
+console.log(order1)
