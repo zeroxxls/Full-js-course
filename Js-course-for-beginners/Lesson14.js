@@ -38,3 +38,24 @@ const elem3 = document.querySelector("div");
 elem3.addEventListener("mousemove", ()=>{
     console.log("moved")
 })
+// //
+// const button = document.querySelector('.btn');
+// const buttonTwo = document.querySelector('.btn2');
+// function handleClick(){
+//     console.log('click')
+// }
+
+// button.addEventListener('click', handleClick);
+// buttonTwo.addEventListener('click',handleClick)
+
+// buttonTwo.removeEventListener('click',handleClick)
+
+//
+const buttons = document.querySelectorAll('.btn');
+console.log(buttons)
+
+buttons.forEach(button =>{
+    button.addEventListener('click',function(){
+        console.log('clicked')
+    })
+})
