@@ -37,7 +37,7 @@ const step1 = async()=> console.log('step1')
 const step2 = async()=> console.log('step2')
 const step3 = async()=> console.log('step3')
 
-await step1().then(step2).then(step3)
+await step1().then(step2).then(step3);
 
 // await step1();
 // await step2();
