@@ -1,40 +1,40 @@
-// fetch('api.github.com/users/zeroxxls').then(res=>{
-//     return res.json()
-// }).then(res =>{
-//     console.log(res)
-// }).catch(err=>{
-//     console.log('Error=>',err)
-// })
+fetch('api.github.com/users/zeroxxls').then(res=>{
+    return res.json()
+}).then(res =>{
+    console.log(res)
+}).catch(err=>{
+    console.log('Error=>',err)
+})
 
-// async function getGitData(){
-//     try{
-//         const response = await fetch('https://api.github.com/users/zeroxxls');
-//     const data = await response.json();
-//     console.log(data);
-//     }catch(err){
-//         console.log('Error is here',err)
-//     }
-// }
-// getGitData();
+async function getGitData(){
+    try{
+        const response = await fetch('https://api.github.com/users/zeroxxls');
+    const data = await response.json();
+    console.log(data);
+    }catch(err){
+        console.log('Error is here',err)
+    }
+}
+getGitData();
 
-// const video = document.querySelector('video');
+const video = document.querySelector('video');
 
-// const myVideo = navigator.mediaDevices.getUserMedia({video:true}).then(mediaStream =>{
-//     video.srcObject = mediaStream;
-// }).catch(err=>{
-//     console.log('video.error=>',err);
-// })
-// console.log(myVideo)
+const myVideo = navigator.mediaDevices.getUserMedia({video:true}).then(mediaStream =>{
+    video.srcObject = mediaStream;
+}).catch(err=>{
+    console.log('video.error=>',err);
+})
+console.log(myVideo)
 
-// const getUserVideo = async()=>{
-//    try{
-//     const response = await navigator.mediaDevices.getUserMedia({video:true});
-//     video.srcObject = response;
-//    }catch(err){
-//     console.log('Error is here',err)
-//    }
-// }
-// getUserVideo();
+const getUserVideo = async()=>{
+   try{
+    const response = await navigator.mediaDevices.getUserMedia({video:true});
+    video.srcObject = response;
+   }catch(err){
+    console.log('Error is here',err)
+   }
+}
+getUserVideo();
 
 
 function sleep (time){
@@ -63,22 +63,22 @@ const sleepSession = async()=>{
 
 sleepSession();
 
-// sleep(1500).then(res=>{
-//     console.log(res)
-//     return sleep(2000)
-// }).then(res=>{
-//     console.log(res);
-//     return sleep(3000)
-// }).then(res=>{
-//     console.log(res);
-//     return sleep(500);
-// }).then(res=>{
-//     console.log(res);
-//     return sleep(200);
-// }).then(res=>{
-//     console.log(res)
-// }).catch(err=>{
-//     console.log('Error=>',err)
-// })
+sleep(1500).then(res=>{
+    console.log(res)
+    return sleep(2000)
+}).then(res=>{
+    console.log(res);
+    return sleep(3000)
+}).then(res=>{
+    console.log(res);
+    return sleep(500);
+}).then(res=>{
+    console.log(res);
+    return sleep(200);
+}).then(res=>{
+    console.log(res)
+}).catch(err=>{
+    console.log('Error=>',err)
+})
 
-// setInterval(()=> console.log(Date.now()),500)
+setInterval(()=> console.log(Date.now()),500)
