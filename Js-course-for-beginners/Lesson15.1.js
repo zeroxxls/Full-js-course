@@ -63,22 +63,22 @@ const sleepSession = async()=>{
 
 sleepSession();
 
-sleep(1500).then(res=>{
-    console.log(res)
-    return sleep(2000)
-}).then(res=>{
-    console.log(res);
-    return sleep(3000)
-}).then(res=>{
-    console.log(res);
-    return sleep(500);
-}).then(res=>{
-    console.log(res);
-    return sleep(200);
-}).then(res=>{
-    console.log(res)
-}).catch(err=>{
-    console.log('Error=>',err)
-})
+// sleep(1500).then(res=>{
+//     console.log(res)
+//     return sleep(2000)
+// }).then(res=>{
+//     console.log(res);
+//     return sleep(3000)
+// }).then(res=>{
+//     console.log(res);
+//     return sleep(500);
+// }).then(res=>{
+//     console.log(res);
+//     return sleep(200);
+// }).then(res=>{
+//     console.log(res)
+// }).catch(err=>{
+//     console.log('Error=>',err)
+// })
 
-setInterval(()=> console.log(Date.now()),500)
+// setInterval(()=> console.log(Date.now()),500)
