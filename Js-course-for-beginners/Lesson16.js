@@ -50,3 +50,44 @@ img.width=240;
 img.classList.add('super');
 img.alt = 'super man';
 div.appendChild(img);
+
+const elemHTML= `<div class="pDiv">
+    <p>Параграф 1</p>
+    <p>Параграф 2</p>
+</div>`
+
+const ulList = div.querySelector('ul');
+ulList.insertAdjacentHTML('beforebegin',elemHTML);
+
+const pDiv= document.querySelector('.pDiv');
+pDiv.children[1].classList.add('text');
+pDiv.firstElementChild.remove();
+const curDate = new Date();
+const curYear = curDate.getFullYear()
+
+const generateAutoCard =(brand,color,year)=>{
+    return `<div class = "autoCard">
+        <h2>${brand} ${year}</h2>
+        <p>Автомобиль ${brand} - ${year} года. Возраст авто - ${curYear - year} лет.</p>
+    </div>`
+}
+const carsDiv = document.createElement('div')
+carsDiv.classList.add('autos')
+
+
+const carsList =[
+    {brand: 'Tesla', year: 2015, color:'red'},
+    {brand: 'Lexus', year: 2016, color:'White'},
+    {brand: 'Nissan', year: 2012, color:'Black'},
+]
+
+const carsHTML = carsList.map(car =>{
+    return generateAutoCard(car.brand, car.color, car.year);
+}).join('');
+
+carsDiv.innerHTML = carsHTML;
+div.insertAdjacentElement('beforebegin',carsDiv);
+
+
+
+
