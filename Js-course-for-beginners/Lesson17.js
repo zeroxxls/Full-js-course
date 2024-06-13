@@ -5,12 +5,12 @@ sessionStorage.clear(); //очищает весь массив данных - б
 
 const local = localStorage.getItem("name");//получает элемент по ключу
 const session = sessionStorage.getItem("name");
-console.log(local,session)
+console.log(local,session)//artist artist
 
 //Cookie
 
 document.cookie = "Name= Kirill";
-document.cookie = "SecondName= Khoroshun; maxAge=400";
+document.cookie = "SecondName= Khoroshun; max-age=400";
 document.cookie = "Name= Katya"//Браузер сам поменяет ключ Имя на более новое,в консоле будет выводиться - Name= Katya,а не Name= Kirill
 document.cookie = `Example = ${encodeURIComponent("Test text")}`;//кодирует пробел между элементами специальными символами
 document.cookie = "SecondName= Khoroshun; max-age=-1";//Чтобы удалить куки сразу надо чтобы оно было отрицательным числом
