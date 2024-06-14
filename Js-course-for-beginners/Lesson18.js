@@ -1,3 +1,4 @@
+//SetTimeout / SetInterval / ClearInterval
 console.log("Hello");
 setTimeout(()=>{ //Вызывает функцию через заданное количество времени
     console.log("Hello2")
@@ -12,7 +13,7 @@ setTimeout(()=>{
     clearInterval(id)
 },6500)
 
-//Fetch
+//Fetch / Async Await
 
 
 const func = async ()=>{
